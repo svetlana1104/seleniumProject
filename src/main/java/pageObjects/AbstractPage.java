@@ -14,8 +14,8 @@ import java.util.List;
 
 public abstract class AbstractPage {
 
-    @FindBy(how = How.XPATH, using = "/*[@class='modal-iframe']")
-    private static By FRAME_XPATH;
+    //@FindBy(how = How.XPATH, using = "/*[@class='modal-iframe']")
+    private static By FRAME_XPATH = By.xpath("/*[@class='modal-iframe']");
 
     private WebDriver driver;
     private WebDriverWait waiter;

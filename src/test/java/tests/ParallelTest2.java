@@ -12,7 +12,7 @@ public class ParallelTest2 extends BaseTest {
     public void webDriverTest3(){
         CommonPage homePage = new CommonPage();
         homePage.inputTextIntoSearchField();
-        homePage.clickOnCloseButton();
+       // homePage.clickOnCloseButton();
         log.info("webDriverTest3 passed...");
     }
 
@@ -20,7 +20,7 @@ public class ParallelTest2 extends BaseTest {
     public void webDriverTest4(){
         CommonPage homePage = new CommonPage();
         homePage.inputTextIntoSearchField();
-        homePage.clickOnCloseButton();
+      //  homePage.clickOnCloseButton();
         log.info("webDriverTest4 passed...");
     }
 }
