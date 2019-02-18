@@ -53,7 +53,7 @@
                 <version>2.22.0</version>
                 <configuration>
                     <parallel>all</parallel>
-                    <threadCount>10</threadCount>
+                    <threadCount>2</threadCount>
                     <threadCountSuites>2</threadCountSuites>
                     <threadCountClasses>2</threadCountClasses>
                     <threadCountMethods>6</threadCountMethods>
