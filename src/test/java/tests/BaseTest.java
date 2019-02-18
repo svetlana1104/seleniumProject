@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import java.util.logging.Logger;
 
 public class BaseTest {
-    public WebDriver driver;
+    public static WebDriver driver;
     private static Logger log = Logger.getLogger(BaseTest.class.getName());
 
     @Before
@@ -19,8 +19,8 @@ public class BaseTest {
         driver.manage().window().maximize();
     }
 
-    @After
+   /* @After
     public void teardown() {
-        driver.quit();
-    }
+      //  driver.quit();
+    }*/
 }
