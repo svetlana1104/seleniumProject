@@ -24,8 +24,8 @@ public class DriverManager {
 
     private static void setDriver()  {
         try {
-            DesiredCapabilities capability = DesiredCapabilities.chrome();
-            capability.setBrowserName("chrome");
+            DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
+            capability.setBrowserName("internet explorer");
             capability.setPlatform(Platform.WIN10);
             driver = new RemoteWebDriver(new URL("http://localhost:4444//wd/hub"), capability);
         } catch (MalformedURLException e) {
