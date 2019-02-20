@@ -1,0 +1,1 @@
+java -Dwebdriver.ie.driver=D:\MyStudy\Projects\seleniumProject\drivers\IEDriverServer.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 5560 -browser browserName=internet explorer

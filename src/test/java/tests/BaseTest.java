@@ -15,8 +15,8 @@ public class BaseTest {
     public void setup() {
         driver = DriverManager.getDriver();
         log.info("Driver was initialized!");
-        driver.get("https://www.onliner.by/");
-        driver.manage().window().maximize();
+        /*driver.get("https://www.onliner.by/");
+        driver.manage().window().maximize();*/
     }
 
    /* @After

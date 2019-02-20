@@ -10,6 +10,8 @@ public class ParallelTest2 extends BaseTest {
 
     @Test
     public void webDriverTest3(){
+        driver.get("https://www.onliner.by/");
+        driver.manage().window().maximize();
         CommonPage homePage = new CommonPage();
         homePage.inputTextIntoSearchField();
        // homePage.clickOnCloseButton();
@@ -18,6 +20,8 @@ public class ParallelTest2 extends BaseTest {
 
     @Test
     public void webDriverTest4(){
+        driver.get("https://www.onliner.by/");
+        driver.manage().window().maximize();
         CommonPage homePage = new CommonPage();
         homePage.inputTextIntoSearchField();
       //  homePage.clickOnCloseButton();
