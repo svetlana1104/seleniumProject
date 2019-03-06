@@ -52,14 +52,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                 <configuration>
-                    <parallel>all</parallel>
-                    <threadCount>2</threadCount>
-                    <threadCountSuites>2</threadCountSuites>
+                    <parallel>classes</parallel>
+                    <threadCount>4</threadCount>
+                  <!--  <threadCountSuites>2</threadCountSuites>
                     <threadCountClasses>2</threadCountClasses>
-                    <threadCountMethods>6</threadCountMethods>
+                    <threadCountMethods>6</threadCountMethods>-->
               <!--      <parallelTestTimeoutInSeconds>3.5</parallelTestTimeoutInSeconds>
                     <parallelTestTimeoutForcedInSeconds>5</parallelTestTimeoutForcedInSeconds>-->
-                    <perCoreThreadCount>true</perCoreThreadCount>
+                    <!--<perCoreThreadCount>true</perCoreThreadCount>-->
                     <includes>
                         <include>Parallel.class</include>
                     </includes>

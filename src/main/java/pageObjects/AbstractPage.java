@@ -14,14 +14,14 @@ import java.util.List;
 
 public abstract class AbstractPage {
 
-    //@FindBy(how = How.XPATH, using = "/*[@class='modal-iframe']")
-    private static By FRAME_XPATH = By.xpath("/*[@class='modal-iframe']");
+    @FindBy(how = How.XPATH, using = "/*[@class='modal-iframe']")
+    private static By FRAME_XPATH;
 
     private WebDriver driver;
     private WebDriverWait waiter;
 
     public AbstractPage (){
-        this.driver = DriverManager.getDriver();
+        this.driver = DriverManager.get();
         waiter = new WebDriverWait(driver,30);
     }
 

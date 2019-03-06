@@ -13,14 +13,15 @@ public class BaseTest {
 
     @Before
     public void setup() {
-        driver = DriverManager.getDriver();
+        driver = DriverManager.get();
         log.info("Driver was initialized!");
         /*driver.get("https://www.onliner.by/");
         driver.manage().window().maximize();*/
     }
 
-   /* @After
+    @After
     public void teardown() {
+        DriverManager.quit();
       //  driver.quit();
-    }*/
+    }
 }
